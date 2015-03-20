@@ -25,3 +25,4 @@
 ;;====== end auto save code =====
 
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p t)
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
