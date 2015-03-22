@@ -12,3 +12,14 @@
   "does previous window"
   (interactive)
   (other-window -1))
+
+(defun duplicate-line()
+  "Duplicate the line under the cursor, just like C-S-d in Sublime Text"
+  (interactive)
+  (move-beginning-of-line 1)
+  (kill-line)
+  (yank)
+  (open-line 1)
+  (next-line 1)
+  (yank)
+  )
