@@ -4,6 +4,7 @@
 (load-file "~/.emacs.d/packages.el")
 (load-file "~/.emacs.d/platform.el")
 (load-file "~/.emacs.d/vars.el")
+(load-file "~/.emacs.d/themes.el")
 
 (load-file "~/.emacs.d/alias.el")
 
