@@ -21,3 +21,4 @@ history
 /.emacs.desktop.lock
 /lisp/haml-mode/
 
+/ac-comphist.dat
