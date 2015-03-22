@@ -6,3 +6,6 @@
 (load-file "~/.emacs.d/vars.el")
 
 (load-file "~/.emacs.d/alias.el")
+
+(setq mail-archive-file-name "~/.emacs.d/sentmail")
+(defconst user-mail-address "kristian.hartikainen@gmail.com")
