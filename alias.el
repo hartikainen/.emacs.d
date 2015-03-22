@@ -3,4 +3,4 @@
 (define-key global-map [(down)] 'windmove-down)
 (define-key global-map [(up)] 'windmove-up)
 
-(define-key global-map "\C-g" 'magit-status)
+(define-key global-map "\C-cg" 'magit-status)
