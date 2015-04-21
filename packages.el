@@ -14,6 +14,7 @@
         auctex
         magit
         multiple-cursors
+	projectile
         ))
 
 (mapc
