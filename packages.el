@@ -13,8 +13,8 @@
       '(
         auctex
         magit
-	multiple-cursors
-	))
+        multiple-cursors
+        ))
 
 (mapc
  (lambda (package)

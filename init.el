@@ -1,5 +1,5 @@
-;;(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-(mapc 'load (directory-files "~/.emacs.d/lisp" t "^[A-Za-z]*\\.el"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
+;;(mapc 'load (directory-files "~/.emacs.d/lisp" t "^[A-Za-z]*\\.el"))
 
 (load-file "~/.emacs.d/lisp/autosave.el")
 (load-file "~/.emacs.d/packages.el")

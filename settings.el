@@ -1,1 +1,1 @@
-(mapc 'load (directory-files "~/.emacs.d/settings" t "^[A-Za-z]*\\.el"))
+(mapc 'load (directory-files "~/.emacs.d/settings" t "^[A-Za-z\-]*\\.el"))
