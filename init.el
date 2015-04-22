@@ -28,3 +28,4 @@
  '(magit-diff-add ((t (:inherit diff-added :foreground "cyan"))))
  '(magit-diff-del ((t (:inherit diff-removed :foreground "red"))))
  '(magit-item-highlight ((t (:inherit secondary-selection :foreground "black")))))
+(put 'set-goal-column 'disabled nil)
