@@ -8,12 +8,14 @@
 (package-initialize)
 
 (defvar my-packages
-      '(
-        auctex
-        magit
-        multiple-cursors
-	projectile
-        ))
+  '(
+    auto-complete
+    ac-math
+    auctex
+    magit
+    multiple-cursors
+    projectile
+    ))
 
 (mapc
  (lambda (package)
