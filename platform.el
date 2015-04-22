@@ -10,6 +10,5 @@
    ;; windows... useless at the moment (probably always)
    ;; (t
    ;;  (load-file "~/.emacs.d/platform/windows.el"))
-   )
-  (message "%s" home-dir))
+   ))
 
