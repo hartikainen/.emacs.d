@@ -4,3 +4,4 @@
 (define-key global-map [(up)] 'windmove-up)
 
 (define-key global-map "\C-cg" 'magit-status)
+(global-set-key (kbd "C-a") 'beginning-or-indentation)
