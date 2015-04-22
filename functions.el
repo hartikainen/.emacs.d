@@ -1,5 +1,3 @@
-;; Functions, taken from John's emacs config, that seem useful
-
 (defun save-window-layout () (interactive) (window-configuration-to-register ?z))
 (defun load-window-layout () (interactive) (jump-to-register ?z))
 
