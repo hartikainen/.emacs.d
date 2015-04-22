@@ -8,7 +8,6 @@
 (load-file "~/.emacs.d/themes.el")
 (load-file "~/.emacs.d/settings.el")
 (load-file "~/.emacs.d/functions.el")
-
 (load-file "~/.emacs.d/alias.el")
 
 (setq mail-archive-file-name "~/.emacs.d/sentmail")
