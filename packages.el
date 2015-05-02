@@ -23,5 +23,3 @@
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
            (package-install package))))
  my-packages)
-
-(add-to-list 'load-path "~/.emacs.d/lisp")
