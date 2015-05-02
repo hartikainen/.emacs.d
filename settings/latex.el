@@ -2,6 +2,12 @@
 (require 'auto-complete-config)
 (require 'ac-math)
 
+(setq TeX-PDF-mode t)
+
+;; do this if above doesn't work
+;;(require 'tex)
+;;(TeX-global-PDF-mode t)
+
 (setq auto-mode-alist (cons '("\\.tex$" . latex-mode) auto-mode-alist))
 
 (add-hook 'tex-mode-hook
