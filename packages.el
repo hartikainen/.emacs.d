@@ -23,3 +23,9 @@
        (if (y-or-n-p (format "Package %s is missing. Install it? " package))
            (package-install package))))
  my-packages)
+
+;; (when (< emacs-major-version 24)
+;;   (or (package-installed-p 'color-theme)
+;;       (if (y-or-n-p (format "Theme '%s' is missing. Install it?" 'color-theme))
+;; 	  (package-install-package)))
+;;   )
