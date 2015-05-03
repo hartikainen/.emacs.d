@@ -19,6 +19,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(when (< emacs-major-version 24)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -26,5 +28,5 @@
  ;; If there is more than one, they won't work right.
  '(magit-diff-add ((t (:inherit diff-added :foreground "cyan"))))
  '(magit-diff-del ((t (:inherit diff-removed :foreground "red"))))
- '(magit-item-highlight ((t (:inherit secondary-selection :foreground "black")))))
+ '(magit-item-highlight ((t (:inherit secondary-selection :foreground "black"))))))
 (put 'set-goal-column 'disabled nil)
