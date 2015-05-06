@@ -15,6 +15,7 @@
     magit
     multiple-cursors
     projectile
+    cuda-mode
     ))
 
 (mapc
