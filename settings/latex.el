@@ -24,7 +24,7 @@
 	     (flyspell-mode)))
 
 (setq reftex-plug-into-AUCTeX t)
-(setq TeX-auto-save t)
+;; (setq TeX-auto-save t)
 (setq TeX-parse-self t)
 (setq-default TeX-master nil)
 
