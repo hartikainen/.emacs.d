@@ -30,3 +30,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(global-hl-line-mode t))
+(put 'downcase-region 'disabled nil)
