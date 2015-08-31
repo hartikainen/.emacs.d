@@ -16,6 +16,7 @@
     multiple-cursors
     projectile
     cuda-mode
+    monokai-theme
     ))
 
 (mapc
