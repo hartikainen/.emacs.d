@@ -17,6 +17,7 @@
     projectile
     cuda-mode
     monokai-theme
+    web-mode
     ))
 
 (mapc
