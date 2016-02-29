@@ -1,5 +1,5 @@
 (mapc 'load (directory-files "~/.emacs.d/settings" t "^[A-Za-z\-]*\\.el"))
-(setq term-buffer-maximum-size 200000)
+(setq term-buffer-maximum-size 10000)
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 
