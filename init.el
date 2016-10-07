@@ -9,6 +9,7 @@
 (load-file "~/.emacs.d/functions.el")
 (load-file "~/.emacs.d/themes.el")
 (load-file "~/.emacs.d/alias.el")
+(load-file "~/.emacs.d/locals.el")
 
 (setq mail-archive-file-name "~/.emacs.d/sentmail")
 (defconst user-mail-address "kristian.hartikainen@gmail.com")
