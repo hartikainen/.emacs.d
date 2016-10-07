@@ -1,12 +1,17 @@
 (require 'projectile)
-
-(projectile-global-mode)
+(require 'helm-projectile)
 
 ;; To enable Projectile only in selected modes
 ;; (add-hook 'ruby-mode-hook 'projectile-on)
 
-;; To enable caching unconditionally use this snippet of code:
-;; (setq projectile-enable-caching t)
+(projectile-global-mode)
+
+(setq projectile-completion-system 'helm
+      Projectile-Switch-project-action 'helm-projectile
+      projectile-enable-caching t
+      projectile-remember-window-configs t)
+
+(helm-projectile-on)
 
 ;; When running projectile-switch-project (C-c p s) Projectile invokes the command specified in
 ;; projectile-switch-project-action (by default it's projectile-find-file). If you want to use

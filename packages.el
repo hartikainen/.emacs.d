@@ -1,9 +1,16 @@
 (require 'package)
 
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-			 ("marmalade" . "https://marmalade-repo.org/packages/")
-			 ("melpa" . "http://melpa.org/packages/")
-			 ("ELPA" . "http://tromey.com/elpa/")))
+(setq package-archives
+      '(("MELPA Stable" . "http://stable.melpa.org/packages/")
+        ("MELPA" . "http://melpa.org/packages/")
+        ("GNU ELPA" . "http://elpa.gnu.org/packages/")
+        ;;("marmalade" . "https://marmalade-repo.org/packages/")
+        ;;("ELPA" . "http://tromey.com/elpa/")
+        )
+      package-archive-priorities
+      '(("MELPA Stable" . 10)
+        ("MELPA" . 5)
+        ("GNU ELPA" . 0)))
 
 (package-initialize)
 
@@ -15,9 +22,17 @@
     magit
     multiple-cursors
     projectile
+    helm-projectile
+
     cuda-mode
-    monokai-theme
     web-mode
+    coffee-mode
+    scss-mode
+    smart-tab
+
+    json
+
+    monokai-theme
     ))
 
 (mapc
