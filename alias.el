@@ -8,3 +8,5 @@
 
 (global-set-key [f8] 'copy-to-clipboard)
 (global-set-key [f9] 'paste-from-clipboard)
+
+(global-set-key "\M-%" 'query-replace-regexp)
