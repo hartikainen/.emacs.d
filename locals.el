@@ -36,17 +36,20 @@ safe-local-variable-values."
 (dir-locals-set-class-variables 'statwing-tab-mode
                                 '((nil (indent-tabs-mode . nil))
                                   (c-mode (indent-tabs-mode . nil))
+                                  (yaml-mode . ((indent-tabs-mode . nil)))
                                   (web-mode (indent-tabs-mode . nil))))
 
 (dir-locals-set-class-variables 'qualtrics-tab-mode
                                 '((nil . ((indent-tabs-mode . t)))
                                   (c-mode . ((indent-tabs-mode . t)))
+                                  (yaml-mode . ((indent-tabs-mode . nil)))
                                   (web-mode . ((indent-tabs-mode . t)))))
 
 (dir-locals-set-class-variables 'swproxy-locals
                                 '((nil . ((compile-command . "cd ~/code/swproxy && source ~/.nvm/nvm.sh && nvm use && npm test")
                                           (indent-tabs-mode . t)))
                                   (c-mode . ((indent-tabs-mode . t)))
+                                  (yaml-mode . ((indent-tabs-mode . nil)))
                                   (web-mode . ((indent-tabs-mode . t)))))
 
 ;; (dir-locals-set-directory-class "/Users/kristian/code/qualtrics/" 'qualtrics-tab-mode)
