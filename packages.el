@@ -32,7 +32,7 @@
 
     json
 
-    monokai-theme
+    color-theme-solarized
     ))
 
 (mapc
