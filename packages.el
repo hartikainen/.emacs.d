@@ -33,6 +33,8 @@
     json
 
     color-theme-solarized
+    ace-window
+    smartrep
     ))
 
 (mapc
