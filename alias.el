@@ -6,5 +6,7 @@
 (define-key global-map "\C-cg" 'magit-status)
 (global-set-key (kbd "C-a") 'beginning-or-indentation)
 
+(define-key global-map "\C-c\C-c" 'compile)
+
 (global-set-key [f8] 'copy-to-clipboard)
 (global-set-key [f9] 'paste-from-clipboard)
