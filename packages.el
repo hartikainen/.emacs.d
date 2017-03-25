@@ -35,6 +35,7 @@
     color-theme-solarized
     ace-window
     smartrep
+    yaml-mode
     ))
 
 (mapc
