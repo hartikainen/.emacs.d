@@ -1,5 +1,5 @@
 (require 'package)
-
+(package-initialize)
 (setq package-archives
       '(("MELPA Stable" . "http://stable.melpa.org/packages/")
         ("MELPA" . "http://melpa.org/packages/")
@@ -12,11 +12,8 @@
         ("MELPA" . 5)
         ("GNU ELPA" . 0)))
 
-(package-initialize)
-
 (defvar my-packages
-  '(
-    auto-complete
+  '(auto-complete
     ac-math
     auctex
     magit
@@ -38,15 +35,24 @@
     yaml-mode
     ))
 
-(mapc
- (lambda (package)
-   (or (package-installed-p package)
-       (if (y-or-n-p (format "Package %s is missing. Install it? " package))
-           (package-install package))))
- my-packages)
 
-;; (when (< emacs-major-version 24)
-;;   (or (package-installed-p 'color-theme)
-;;       (if (y-or-n-p (format "Theme '%s' is missing. Install it?" 'color-theme))
-;; 	  (package-install-package)))
-;;   )
+(defun uninstalled-packages (packages)
+  (delq nil
+        (mapcar (lambda (package)
+                  (if (package-installed-p package nil) nil package))
+                packages)))
+
+(defun confirm-install (packages)
+  (delq nil
+        (mapcar (lambda (package)
+                  (if (y-or-n-p (format "Package %s is missing. Install?" package)) package nil))
+                packages)))
+
+(let ((need-to-install
+       (confirm-install (uninstalled-packages my-packages))))
+  (when need-to-install
+    (progn
+      (package-refresh-contents)
+      (dolist (package need-to-install)
+        (package-install package)
+        ))))
