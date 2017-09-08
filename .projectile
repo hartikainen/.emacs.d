@@ -1,0 +1,4 @@
+-elpa/
+-emacs_autosaves/
+-emacs_backups/
+-projectile.cache

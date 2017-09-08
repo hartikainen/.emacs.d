@@ -6,6 +6,10 @@
 (global-linum-mode 1)
 (add-hook 'term-mode-hook (lambda () (linum-mode -1)))
 
+;; From https://stackoverflow.com/a/42038174
+(when (string= system-type "darwin")
+  (setq dired-use-ls-dired nil))
+
 (smartrep-define-key
     global-map "C-x" '(("^" . 'enlarge-window)
                        ("{" . 'shrink-window-horizontally)

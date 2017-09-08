@@ -60,5 +60,3 @@ safe-local-variable-values."
 ;; (dir-locals-set-directory-class "/Users/kristian/code/qualtrics/" 'qualtrics-tab-mode)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy" 'swproxy-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy/statwing-etl" 'swproxy-statwing-etl-locals)
-(dir-locals-set-directory-class "/Users/kristian/code/statwing-etl" 'statwing-tab-mode)
-(dir-locals-set-directory-class "/Users/kristian/code/cake-stats" 'statwing-tab-mode)
