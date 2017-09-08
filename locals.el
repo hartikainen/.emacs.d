@@ -44,12 +44,21 @@ safe-local-variable-values."
                                   (web-mode . ((indent-tabs-mode . t)))))
 
 (dir-locals-set-class-variables 'swproxy-locals
-                                '((nil . ((compile-command . "docker exec -it swproxy-testrunner npm test")
+                                '((nil . ((compile-command . "docker exec -it swproxy-testrunner /bin/sh -c 'SWPROXY_TESTS_UPDATE=false npm test -- --grep \"\"'")
                                           (indent-tabs-mode . t)))
                                   (c-mode . ((indent-tabs-mode . t)))
-                                  (web-mode . ((indent-tabs-mode . t)))))
+                                  (web-mode . ((indent-tabs-mode . t)))
+                                  (yaml-mode . ((indent-spaces-mode . t)
+                                                (indent-tabs-mode . nil)))))
+
+(dir-locals-set-class-variables 'swproxy-statwing-etl-locals
+                                '((nil . ((compile-command . "cd ~/code/swproxy && docker exec -it statwing-etl-testrunner script/test")
+                                          (indent-tabs-mode . nil)))
+                                  (c-mode . ((indent-tabs-mode . nil)))
+                                  (web-mode . ((indent-tabs-mode . nil)))))
 
 ;; (dir-locals-set-directory-class "/Users/kristian/code/qualtrics/" 'qualtrics-tab-mode)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy" 'swproxy-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/swproxy/statwing-etl" 'swproxy-statwing-etl-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/statwing-etl" 'statwing-tab-mode)
 (dir-locals-set-directory-class "/Users/kristian/code/cake-stats" 'statwing-tab-mode)

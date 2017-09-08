@@ -33,6 +33,8 @@
     ace-window
     smartrep
     yaml-mode
+
+    yasnippet
     ))
 
 
