@@ -35,6 +35,9 @@
     yaml-mode
 
     yasnippet
+
+    python
+    nose
     ))
 
 
