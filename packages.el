@@ -25,7 +25,6 @@
     web-mode
     coffee-mode
     scss-mode
-    smart-tab
 
     json
 

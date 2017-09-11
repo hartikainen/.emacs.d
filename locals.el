@@ -57,6 +57,15 @@ safe-local-variable-values."
                                   (c-mode . ((indent-tabs-mode . nil)))
                                   (web-mode . ((indent-tabs-mode . nil)))))
 
+(dir-locals-set-class-variables 'cs294-locals
+                                '((nil . ((compile-command . "docker exec -it swproxy-testrunner npm test")
+                                          (indent-tabs-mode . nil)))
+                                  (c-mode . ((indent-tabs-mode . nil)))
+                                  (web-mode . ((indent-tabs-mode . nil)))
+                                  (python-mode . ((python-indent . 4)))))
+
 ;; (dir-locals-set-directory-class "/Users/kristian/code/qualtrics/" 'qualtrics-tab-mode)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy" 'swproxy-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy/statwing-etl" 'swproxy-statwing-etl-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/berkeley-cs294" 'cs294-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/cs224n" 'cs294-locals)
