@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: tensorflow-print
+# key: tfp
+# group: debug
+# --
+x = tf.Print(
+    x,
+    data=(data,),
+    message="(data,)",
+    first_n=1,
+    summarize=10,
+)

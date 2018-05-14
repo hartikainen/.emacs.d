@@ -62,10 +62,31 @@ safe-local-variable-values."
                                           (indent-tabs-mode . nil)))
                                   (c-mode . ((indent-tabs-mode . nil)))
                                   (web-mode . ((indent-tabs-mode . nil)))
-                                  (python-mode . ((python-indent . 4)))))
+                                  (python-mode . ((python-indent-offset . 4)))))
+
+(dir-locals-set-class-variables 'py-locals
+                                '((nil . ((compile-command . "pushd ~/code/rl-graph-signal-recovery && source .venv/bin/activate && nosetests -m '' && popd")
+                                          (indent-tabs-mode . nil)))
+                                  (c-mode . ((indent-tabs-mode . nil)))))
+
+(dir-locals-set-class-variables 'sac-locals
+                                '(
+                                  (python-mode . ((python-indent-offset . 4)))
+                                  ))
+
+(dir-locals-set-class-variables 'ray-locals
+                                '(
+                                  (python-mode . ((python-indent-offset . 4)))
+                                  ))
 
 ;; (dir-locals-set-directory-class "/Users/kristian/code/qualtrics/" 'qualtrics-tab-mode)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy" 'swproxy-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy/statwing-etl" 'swproxy-statwing-etl-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/berkeley-cs294" 'cs294-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/cs224n" 'cs294-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/rl-graph-signal-recovery" 'py-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/softqlearning-private" 'sac-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/softqlearning-private2" 'sac-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/softqlearning-private3" 'sac-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/rllab" 'sac-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/ray" 'ray-locals)
