@@ -79,6 +79,11 @@ safe-local-variable-values."
                                   (python-mode . ((python-indent-offset . 4)))
                                   ))
 
+(dir-locals-set-class-variables 'tensorflow-model-locals
+                                '(
+                                  (python-mode . ((python-indent-offset . 4)))
+                                  ))
+
 ;; (dir-locals-set-directory-class "/Users/kristian/code/qualtrics/" 'qualtrics-tab-mode)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy" 'swproxy-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/swproxy/statwing-etl" 'swproxy-statwing-etl-locals)
@@ -90,3 +95,5 @@ safe-local-variable-values."
 (dir-locals-set-directory-class "/Users/kristian/code/softqlearning-private3" 'sac-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/rllab" 'sac-locals)
 (dir-locals-set-directory-class "/Users/kristian/code/ray" 'ray-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/tensorflow-models" 'tensorflow-model-locals)
+(dir-locals-set-directory-class "/Users/kristian/code/glow-flow" 'tensorflow-model-locals)
