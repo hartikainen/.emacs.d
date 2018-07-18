@@ -3,8 +3,14 @@
 (setq-default indent-tabs-mode nil)
 (setq-default tab-width 2)
 
-(global-linum-mode 1)
-(add-hook 'term-mode-hook (lambda () (linum-mode -1)))
+;; check emacs version
+(if (version< emacs-version "26.1")
+    (progn
+      (global-linum-mode 1)
+      (add-hook 'term-mode-hook (lambda () (linum-mode -1))))
+  (progn
+    (global-display-line-numbers-mode 1)
+    (add-hook 'term-mode-hook (lambda () (display-line-numbers-mode -1)))))
 
 ;; From https://stackoverflow.com/a/42038174
 (when (string= system-type "darwin")

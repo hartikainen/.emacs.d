@@ -44,14 +44,6 @@
       standard-indent 4
       delete-selection-mode t
       desktop-save-mode t
-
-      linum-format (lambda (line)
-		     (propertize (format
-				  (let ((w (length (number-to-string
-						    (count-lines (point-min) (point-max))))))
-				    (concat "%" (number-to-string w) "d "))
-				  line)
-				 'face 'linum))
       )
 
 (setq-default truncate-lines t
