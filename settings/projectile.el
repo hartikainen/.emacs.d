@@ -14,9 +14,8 @@
 
 (helm-projectile-on)
 
-(setq projectile-indexing-method 'native)
-
-;; (setq projectile-use-git-grep 1)
+(setq projectile-use-git-grep 1)
+(setq projectile-indexing-method 'git)
 
 ;; projectile-globally-ignored-files
 ;; projectile-globally-ignored-directories
