@@ -35,6 +35,7 @@
 
     yasnippet
 
+    elpy
     python
     nose
     ))
