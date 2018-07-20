@@ -43,9 +43,9 @@
                   python-indent-offset 4
                   python-indent-guess-indent-offset t)
             (infer-indentation-style)
-            (local-set-key (kbd "C-c c a") 'nosetests-all)
-            (local-set-key (kbd "C-c c m") 'nosetests-module)
-            (local-set-key (kbd "C-c c s") 'nosetests-one)
+            (local-set-key (kbd "C-c t a") 'nosetests-all)
+            (local-set-key (kbd "C-c t m") 'nosetests-module)
+            (local-set-key (kbd "C-c t s") 'nosetests-one)
             (local-set-key (kbd "C-c C-c") 'compile)))
 
 (setq auto-mode-alist (cons '("\\.pyx$" . python-mode) auto-mode-alist))
