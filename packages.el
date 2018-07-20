@@ -21,6 +21,8 @@
     projectile
     helm-projectile
 
+    transpose-frame
+
     cuda-mode
     web-mode
     coffee-mode
