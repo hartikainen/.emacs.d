@@ -23,3 +23,5 @@
 ;;    '(magit-diff-add ((t (:inherit diff-added :foreground "cyan"))))
 ;;    '(magit-diff-del ((t (:inherit diff-removed :foreground "red"))))
 ;;    '(magit-item-highlight ((t (:inherit secondary-selection :foreground "black"))))))
+(custom-set-variables
+ '(magit-display-buffer-function (quote magit-display-buffer-same-window-except-diff-v1)))
