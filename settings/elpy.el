@@ -1,3 +1,4 @@
+(load "elpy")
 (when (require 'elpy nil t)
   (elpy-enable))
 

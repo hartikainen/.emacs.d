@@ -1,5 +1,3 @@
-(require 'auto-complete)
-(require 'auto-complete-config)
 (require 'ac-math)
 
 (setq TeX-PDF-mode t)

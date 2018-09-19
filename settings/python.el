@@ -38,6 +38,8 @@
 
 (add-hook 'python-mode-hook
           (lambda ()
+            (push 'ac-source-yasnippet ac-sources)
+            (setq-default ac-sources (push 'ac-source-yasnippet ac-sources))
             (setq indent-tabs-mode nil
                   tab-width 4
                   python-indent-offset 4
