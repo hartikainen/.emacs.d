@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tfe
+# key: tfe
+# group : general
+# --
+import tensorflow as tf
+
+tf.enable_eager_execution()
+$0
