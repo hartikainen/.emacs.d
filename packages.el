@@ -36,6 +36,8 @@
     yaml-mode
 
     yasnippet
+    yasnippet-snippets
+
     highlight-indentation
 
     elpy

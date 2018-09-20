@@ -2,7 +2,7 @@
 
 (setq yas-snippet-dirs
       '("~/.emacs.d/snippets" ;; personal snippets
-        "~/.emacs.d/elpa/yasnippet-0.13.0/snippets"
+        "~/.emacs.d/elpa/yasnippet-snippets-0.5/snippets"
         ))
 
 (global-set-key (kbd "M-RET") 'yas-expand)
