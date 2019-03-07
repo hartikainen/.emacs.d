@@ -27,6 +27,7 @@
     web-mode
     coffee-mode
     scss-mode
+    dockerfile-mode
 
     json
 
