@@ -3,4 +3,4 @@
 # key: pdb
 # group: debug
 # --
-from pdb import set_trace; from pprint import pprint; set_trace()
+from pprint import pprint; import ipdb; ipdb.set_trace(context=30)

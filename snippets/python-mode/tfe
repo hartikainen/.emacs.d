@@ -4,6 +4,7 @@
 # group : general
 # --
 import tensorflow as tf
+import tensorflow_probability as tfp
 
 tf.enable_eager_execution()
 $0

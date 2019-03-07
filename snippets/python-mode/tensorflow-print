@@ -3,10 +3,6 @@
 # key: tfp
 # group: debug
 # --
-x = tf.Print(
-    x,
-    data=(data,),
-    message="(data,)",
-    first_n=1,
-    summarize=10,
-)
+print_op = tf.print(*inputs, summarize=-1)
+with tf.control_dependencies([print_op]):
+     x = x + 0.0
