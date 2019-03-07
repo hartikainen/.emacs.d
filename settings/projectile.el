@@ -1,21 +1,27 @@
 (require 'projectile)
 (require 'helm-projectile)
 
+(projectile-mode +1)
+
 ;; To enable Projectile only in selected modes
 ;; (add-hook 'ruby-mode-hook 'projectile-on)
 ;;
 
 (projectile-global-mode)
 
+(define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 (setq projectile-completion-system 'helm
       projectile-switch-project-action 'helm-projectile
-      projectile-enable-caching t
+      ;; projectile-enable-caching t
       projectile-remember-window-configs t)
 
 (helm-projectile-on)
 
 (setq projectile-use-git-grep 1)
-(setq projectile-indexing-method 'git)
+;; (setq projectile-indexing-method 'git)
+(setq projectile-indexing-method 'alien)
 
 ;; projectile-globally-ignored-files
 ;; projectile-globally-ignored-directories
