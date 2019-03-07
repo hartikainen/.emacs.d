@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: remind-later
+# key: remind-later
+# group: debug
+# --
+from datetime import datetime
+if datetime.now() > datetime(2018, 10, 1, 12, 15, 00):
+    from pprint import pprint; from ipdb import set_trace; set_trace()
+    raise ValueError("""
+    1. Do something
+    2. Do something else
+    """)
