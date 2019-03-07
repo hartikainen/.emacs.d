@@ -1,5 +1,5 @@
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
+;; (require 'auto-complete)
+;; (require 'auto-complete-config)
+;; (ac-config-default)
 
-(with-eval-after-load 'auto-complete (ac-flyspell-workaround))
+;; (with-eval-after-load 'auto-complete (ac-flyspell-workaround))

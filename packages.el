@@ -13,7 +13,7 @@
         ("GNU ELPA" . 0)))
 
 (defvar my-packages
-  '(auto-complete
+  '(;; auto-complete
     ac-math
     auctex
     magit

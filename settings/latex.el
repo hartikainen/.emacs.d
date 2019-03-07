@@ -28,9 +28,9 @@
 
 
 ;; Autocomplete stuff, requires auto-complete, auto-complete-config and ac-math
-(ac-config-default)
+;; (ac-config-default)
 
-(add-to-list 'ac-modes 'latex-mode)   ; make auto-complete aware of `latex-mode`
+;; (add-to-list 'ac-modes 'latex-mode)   ; make auto-complete aware of `latex-mode`
 
 (defun ac-LaTeX-mode-setup () ; add ac-sources to default ac-sources
   (setq ac-sources
@@ -38,6 +38,6 @@
 		ac-sources))
   )
 (add-hook 'LaTeX-mode-hook 'ac-LaTeX-mode-setup)
-(global-auto-complete-mode t)
+;; (global-auto-complete-mode t)
 
 (setq ac-math-unicode-in-math-p t)
