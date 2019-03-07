@@ -20,3 +20,5 @@
     global-map "C-x" '(("^" . 'enlarge-window)
                        ("{" . 'shrink-window-horizontally)
                        ("}" . 'enlarge-window-horizontally)))
+
+(setq confirm-kill-emacs 'yes-or-no-p)
