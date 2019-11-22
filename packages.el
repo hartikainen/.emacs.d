@@ -31,7 +31,8 @@
 
     json
 
-    color-theme-solarized
+    gruvbox-theme
+
     ace-window
     smartrep
     yaml-mode
