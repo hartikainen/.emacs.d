@@ -72,3 +72,14 @@ Interactively, N is the prefix arg."
     (unwind-protect
         ad-do-it
       (fset 'one-window-p (symbol-function 'orig-one-window-p)))))
+
+(defun to-underscore ()
+  (interactive)
+  (progn
+    (replace-regexp
+     "\\([A-Z]\\)" "_\\1"
+     nil
+     (region-beginning)
+     (region-end))
+    (downcase-region (region-beginning)
+                     (region-end))))
