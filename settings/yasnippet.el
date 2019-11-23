@@ -1,9 +1,12 @@
 (require 'yasnippet)
 
 (setq yas-snippet-dirs
-      '("~/.emacs.d/snippets" ;; personal snippets
-        "~/.emacs.d/elpa/yasnippet-snippets-0.7/snippets"
-        ))
+      (list
+       "~/.emacs.d/snippets" ;; personal snippets
+       (format
+        "~/.emacs.d/elpa/yasnippet-snippets-%s/snippets"
+        (mapconcat 'number-to-string (pkg-info-package-version 'yasnippet-snippets) "."))
+       ))
 
 (global-set-key (kbd "M-RET") 'yas-expand)
 
