@@ -1,3 +1,6 @@
+(font-lock-add-keywords 'python-mode
+                        '(("\\<\\(breakpoint\\)" 0 font-lock-warning-face)))
+
 (defun how-many-region (begin end regexp &optional interactive)
   "Print number of non-trivial matches for REGEXP in region.
    Non-interactive arguments are Begin End Regexp"
