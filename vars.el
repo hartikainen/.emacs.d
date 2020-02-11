@@ -49,7 +49,11 @@
 (setq-default truncate-lines t
               indent-tabs-mode nil)
 
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p t)
+
+(defun set-delete-trailing-whitespace-hook ()
+  (add-hook 'before-save-hook #'delete-trailing-whitespace nil t))
+(add-hook 'prog-mode-hook #'set-delete-trailing-whitespace-hook)
 
 (show-paren-mode 1)
 (delete-selection-mode 1)
