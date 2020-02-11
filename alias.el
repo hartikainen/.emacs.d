@@ -10,3 +10,5 @@
 
 (global-set-key [f8] 'copy-to-clipboard)
 (global-set-key [f9] 'paste-from-clipboard)
+
+(define-key global-map "\M-%" 'query-replace-regexp)
