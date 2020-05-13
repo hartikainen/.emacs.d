@@ -21,6 +21,8 @@
     projectile
     helm-projectile
 
+    clipetty
+
     transpose-frame
 
     cuda-mode
