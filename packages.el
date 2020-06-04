@@ -47,7 +47,6 @@
     elpy
     python
     rainbow-delimiters
-    nose
     ))
 
 
