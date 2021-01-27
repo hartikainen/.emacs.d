@@ -3,8 +3,9 @@
 # key: remind-later
 # group: debug
 # --
-from datetime import datetime
-if datetime.now() > datetime(2018, 10, 1, 12, 15, 00):
+from datetime import datetime, timedelta
+if (datetime(`(format-time-string "%Y, %m, %d, %-H, %-M, %-S")`) + timedelta(days=1)
+    < datetime.now()):
     breakpoint()
     raise ValueError("""
     $1
